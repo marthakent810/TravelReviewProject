@@ -64,7 +64,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: brown;
   text-align: left;
   background-color: #fff;
 }
@@ -3954,6 +3954,7 @@ input[type="button"].btn-block {
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+  color:beige !important;
 }
 
 .navbar-brand:hover, .navbar-brand:focus {

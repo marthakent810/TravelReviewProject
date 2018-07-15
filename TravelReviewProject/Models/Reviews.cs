@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
@@ -11,9 +12,13 @@ namespace TravelReviewProject.Models
     {
         [Key]
         public int ReviewID { get; set; }
+        [DisplayName("TITLE")]
         public string Title { get; set; }
+        [DisplayName("REVIEW YOUR TRIP")]
         public string Content { get; set; }
+        [DisplayName("TRIP DATE")]
         public string TripDate { get; set; }
+        [DisplayName("RATING: ")]
         public int Stars { get; set; }
 
         [ForeignKey("Category")]

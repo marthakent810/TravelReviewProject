@@ -15,10 +15,44 @@
 .dl-horizontal dt {
     white-space: normal;
 }
+.RevHead{
+    color:brown;
+    font-size:18px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.border1{
+    padding-right: 150px;
+    height:100px;
+    justify-content:flex-end;
+}
+
 
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
     max-width: 280px;
+}
+.wrapper {
+    overflow: hidden;
+}
+
+.sliding-background {
+    background-image: url('../Images/safariMarquee.png');
+    background-size: cover;
+    padding-top:50px;
+    height: 400px;
+    width: 5076px;
+    animation: slide 60s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-1692px, 0, 0);
+    }
 }

@@ -3,56 +3,94 @@
 @{
     ViewBag.Title = "Details";
 }
-
+<style>
+    body {
+        background-image: url("paper.gif");
+        background-color: tan;
+    }
+</style>
 <h2>Details</h2>
 
-<div>
+@*<div>
     <h4>Reviews</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.Country)
-        </dt>
+    </div>
+    @*<hr />*@
+@*<div class="container">
+        <div class="row">
+            <div class="col-2">
+                @Html.DisplayNameFor(model => model.Category.Country)
+            </div>
+            <div class="col-2">
+                @Html.DisplayNameFor(model => model.Title)
+            </div>
+            <div class="col-3">
+                @Html.DisplayNameFor(model => model.Content)
+            </div>
+            <div class="col-1">
+                @Html.DisplayNameFor(model => model.TripDate)
+            </div>
+            <div class="col-1">
+                @Html.DisplayNameFor(model => model.Stars)
+            </div>
+        </div>
+        <div class=row>
+            <div class="col-2">
+                @Html.DisplayFor(model => model.Category.Country)
+            </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Category.Country)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Title)
-        </dt>
+            <div class="col-2">
+                @Html.DisplayFor(model => model.Title)
+            </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Title)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Content)
-        </dt>
+            <div class="col-3">
+                @Html.DisplayFor(model => model.Content)
+            </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Content)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.TripDate)
-        </dt>
+            <div class="col-1">
+                @Html.DisplayFor(model => model.TripDate)
+            </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.TripDate)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Stars)
-        </dt>
+            <div class="col-1">
+                @Html.DisplayFor(model => model.Stars)
+            </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Stars)
-        </dd>
+        </div>
+    </div>*@*
 
-    </dl>
+
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+
+            <h4> @Html.DisplayNameFor(model => model.Title)</h4>
+            <p> @Html.DisplayFor(model => model.Title)</p>
+
+            <div class="card">
+                <img src="~/Images/safari5.jpg" />
+
+                @*<div class="container">*@
+                <p><b> @Html.DisplayNameFor(model => model.TripDate)</b></p>
+                <p>@Html.DisplayFor(model => model.TripDate)</p>
+            </div>
+        </div>
+
+        <div class="col-5">
+            <p> @Html.DisplayNameFor(model => model.Content)</p><br>
+            <p> @Html.DisplayFor(model => model.Content)</p><br>
+            <p> @Html.DisplayNameFor(model => model.Stars) @Html.DisplayFor(model => model.Stars)<i class="fa fa-star-o"></i></p>
+        </div>
+        <div class="col-3">
+            <img src="~/Images/africa map.png" />
+        </div>
+
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+       
+        <p>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
+            @Html.ActionLink("Back to List", "Index")
+        </p>
