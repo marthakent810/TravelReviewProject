@@ -9,66 +9,18 @@
         background-color: tan;
     }
 </style>
-<h2>Details</h2>
-
-@*<div>
-    <h4>Reviews</h4>
-    </div>
-    @*<hr />*@
-@*<div class="container">
-        <div class="row">
-            <div class="col-2">
-                @Html.DisplayNameFor(model => model.Category.Country)
-            </div>
-            <div class="col-2">
-                @Html.DisplayNameFor(model => model.Title)
-            </div>
-            <div class="col-3">
-                @Html.DisplayNameFor(model => model.Content)
-            </div>
-            <div class="col-1">
-                @Html.DisplayNameFor(model => model.TripDate)
-            </div>
-            <div class="col-1">
-                @Html.DisplayNameFor(model => model.Stars)
-            </div>
-        </div>
-        <div class=row>
-            <div class="col-2">
-                @Html.DisplayFor(model => model.Category.Country)
-            </div>
-
-
-            <div class="col-2">
-                @Html.DisplayFor(model => model.Title)
-            </div>
-
-
-            <div class="col-3">
-                @Html.DisplayFor(model => model.Content)
-            </div>
-
-
-            <div class="col-1">
-                @Html.DisplayFor(model => model.TripDate)
-            </div>
-
-
-            <div class="col-1">
-                @Html.DisplayFor(model => model.Stars)
-            </div>
-
-        </div>
-    </div>*@*
+<h4>Details</h4>
 
 
 <div class="container">
     <div class="row">
         <div class="col-4">
 
+@*print title and user content*@
             <h4> @Html.DisplayNameFor(model => model.Title)</h4>
             <p> @Html.DisplayFor(model => model.Title)</p>
 
+@*//card with image, title and trip date properties//*@
             <div class="card">
                 <img src="~/Images/safari5.jpg" />
 
@@ -77,7 +29,7 @@
                 <p>@Html.DisplayFor(model => model.TripDate)</p>
             </div>
         </div>
-
+        @*print trip reviews and ratings*@
         <div class="col-5">
             <p> @Html.DisplayNameFor(model => model.Content)</p><br>
             <p> @Html.DisplayFor(model => model.Content)</p><br>

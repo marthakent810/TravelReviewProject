@@ -4,18 +4,23 @@
     ViewBag.Title = "Reviews";
 }
 <style>
+    /*set background color & image*/
     body {
         background-image: url("paper.gif");
         background-color: tan;
     }
 </style>
 
-<h2 id="ReviewHeader"></h2>
+<h3 id="ReviewHeader"></h3>
 
+<div class="row">
+    <div><img id="afrborder"src="~/Images/afrborder.png" /></div>
+</div>
 <p>
     @Html.ActionLink("WRITE A REVIEW", "Create")
 </p>
 
+@*Print the categories horizontally*@
 <div class=container>
     <div class="RevHead">
         <div class=row>
@@ -38,6 +43,7 @@
     </div>
 </div>
 
+@*loop to enter each review and print to screen*@
 @foreach (var item in Model)
 { 
     <div class="row">
@@ -63,8 +69,6 @@
         </div>
     </div>
 }
-        <div class="border1">
-            <img src="~/Images/african border.png" />
-        </div>
+        
 
 

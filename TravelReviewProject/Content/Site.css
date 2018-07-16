@@ -26,7 +26,24 @@
     height:100px;
     justify-content:flex-end;
 }
-
+#safari{
+    margin-left:425px;
+    font-size:3rem;
+}
+#check {
+    margin-left:320px;
+    font-size:30px;
+}
+#compare{
+    font-size:20px;
+    margin-left:260px;
+}
+#afrborder {
+    background-repeat:repeat-x;
+}
+.col-5{
+    font-size:22px;
+}
 
 /* Set width on the form input elements since they're 100% wide by default */
 input,
@@ -39,9 +56,9 @@ textarea {
 }
 
 .sliding-background {
-    background-image: url('../Images/safariMarquee.png');
+    background-image: url('../Images/marquee3.png');
     background-size: cover;
-    padding-top:50px;
+    padding-top: 50px;
     height: 400px;
     width: 5076px;
     animation: slide 60s linear infinite;

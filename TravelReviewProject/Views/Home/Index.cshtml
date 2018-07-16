@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<TravelReviewProject.Models.Reviews>
+@{
     ViewBag.Title = "Home Page";
 }
 <style>
@@ -7,7 +8,7 @@
         background-color: palegoldenrod;
     }
 </style>
-
+@*Headers*@
 <div>
     <div class="row">
         <h2 id="safari">AFRICAN SAFARIS</h2>
@@ -17,9 +18,15 @@
     </div>
 </div>
 
-    @*sliding marquee*@
-    <div class="wrapper">
-        <div class="sliding-background">
-        </div>
+@*sliding marquee*@
+<div class="wrapper">
+    <div class="sliding-background">
     </div>
+</div>
+
+<div>
+    <div class="row">
+        <p id="compare">Compare different countries to get the experience you deserve!</p>
+    </div>
+</div>
 

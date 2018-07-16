@@ -9,7 +9,7 @@ using System.Web;
 namespace TravelReviewProject.Models
 {
     public class Reviews
-    {
+    {//set up properties in reviews to relationship with category//
         [Key]
         public int ReviewID { get; set; }
         [DisplayName("TITLE")]

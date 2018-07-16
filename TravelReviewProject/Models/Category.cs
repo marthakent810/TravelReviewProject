@@ -8,7 +8,7 @@ using System.Web;
 namespace TravelReviewProject.Models
 {
     public class Category
-    {
+    {//set as primary key//
         [Key]
         public int CatID { get; set; }
         [DisplayName("COUNTRY")]
